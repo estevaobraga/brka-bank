@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using AutoMapper;
 using Brka.Bank.Contas.Domain;
@@ -32,6 +33,11 @@ namespace Brka.Bank.Contas.Repository.Contas
                     x.Digito == conta.Digito);
 
             return Mapper.Map<ContaCorrente>(contaCorrente);
+        }
+
+        public async Task<ICollection<ContaCorrente>> OntemContas()
+        {
+            return Mapper.Map<ICollection<ContaCorrente>>(await Context.Set<ContaModel>().ToListAsync());
         }
     }
 }
