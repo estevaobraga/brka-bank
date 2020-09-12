@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Brka.Bank.Contas.Domain\Brka.Bank.Contas.Domain.csproj" />
+      <ProjectReference Include="..\Brka.Bank.Contas.Repository\Brka.Bank.Contas.Repository.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Validations" />
+    </ItemGroup>
+
+</Project>

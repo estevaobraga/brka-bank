@@ -1,0 +1,35 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:Boolean x:Key="/Default/Environment/Hierarchy/Build/SolBuilderDuo/RunBuildOnSolutionLoaded/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=3eb73307_002D55b2_002D431a_002Dbd16_002D5f34dad7e77a/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Quando_Depositar_Valor_Deve_Retornar_Sucesso" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::7A3A1274-0BE9-46FB-9844-81097C073A85::.NETCoreApp,Version=v3.1::Brka.Bank.Contas.Integration.Test.ContaCorrenteIntegrationTest.Quando_Depositar_Valor_Deve_Retornar_Sucesso&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=500f7eff_002D53ef_002D41e1_002Dbf25_002Dbdf6c282b3d8/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Integration" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::7A3A1274-0BE9-46FB-9844-81097C073A85::.NETCoreApp,Version=v3.1::Brka.Bank.Contas.Integration.Test.ContaCorrenteIntegrationTest.Integration&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=6e48797d_002Db985_002D4c52_002D98fc_002Ded9ec7f9b5de/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Quando_Depositar_Valor_Deve_Retornar_Sucesso #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::7A3A1274-0BE9-46FB-9844-81097C073A85::.NETCoreApp,Version=v3.1::Brka.Bank.Contas.Integration.Test.ContaCorrenteIntegrationTest.Quando_Depositar_Valor_Deve_Retornar_Sucesso&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=ae8a2ecd_002D7b65_002D418b_002D8b95_002Dff987d136c78/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Quando_Consulta_Taxa_Selic_Deve_Retornar_Com_Sucesso" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::3D4AA25F-5DA9-4459-89D2-65737996C015::.NETCoreApp,Version=v3.1::Brka.Bank.BacenGateway.Integration.Test.TaxasDeJurosIntegrationTest.Quando_Consulta_Taxa_Selic_Deve_Retornar_Com_Sucesso&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::7A3A1274-0BE9-46FB-9844-81097C073A85::.NETCoreApp,Version=v3.1::Brka.Bank.Contas.Integration.Test.ContaCorrenteIntegrationTest.Integration&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::7A3A1274-0BE9-46FB-9844-81097C073A85::.NETCoreApp,Version=v3.1::Brka.Bank.Contas.Integration.Test.ContaCorrenteIntegrationTest.Quando_Consulta_Conta_Corrente_Deve_Retornar_Com_Sucesso&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::7A3A1274-0BE9-46FB-9844-81097C073A85::.NETCoreApp,Version=v3.1::Brka.Bank.Contas.Integration.Test.ContaCorrenteIntegrationTest.Quando_Consulta_Extrato_Deve_Retornar_Com_Sucesso&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::7A3A1274-0BE9-46FB-9844-81097C073A85::.NETCoreApp,Version=v3.1::Brka.Bank.Contas.Integration.Test.ContaCorrenteIntegrationTest.Quando_Depositar_Valor_Deve_Retornar_Sucesso&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::81E61C70-245F-45E5-87E4-830BB0B37A13::.NETCoreApp,Version=v3.1::Brka.Bank.Contas.Unit.Test.RentabilizaCdiTest.Valida_Inicializacao_Servico_Rentabilizacao_Conta_Corrente&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	
+	
+	
+	
+	
+	
+	
+	</wpf:ResourceDictionary>
