@@ -1,0 +1,13 @@
+<Project>
+    <PropertyGroup Label="Сommon properties">
+        <LangVersion>default</LangVersion>
+    </PropertyGroup>
+
+    <PropertyGroup Label="Packages dependency versions">
+        <EntityFrameworkCoreVersion>3.1.8</EntityFrameworkCoreVersion>
+        <AutoMapperVersion>10.0.0</AutoMapperVersion>
+        <XUnitVersion>2.4.1</XUnitVersion>
+        <FluentAssertionsVersion>5.10.3</FluentAssertionsVersion>
+        <BogusVersion>30.0.4</BogusVersion>
+    </PropertyGroup>
+</Project>
