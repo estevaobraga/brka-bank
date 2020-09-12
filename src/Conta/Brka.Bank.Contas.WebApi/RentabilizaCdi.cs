@@ -1,4 +1,3 @@
-using System;
 using Quartz;
 using Quartz.Impl;
 
@@ -16,9 +15,8 @@ namespace Brka.Bank.Contas.WebApi
 
         public static void Start()
         {
-            var data = DateTime.Now;
-            var horaFechamentoMercado = new DateTime(data.Year, data.Month, data.Day, 17, 31, 0);
-
+            //var data = DateTime.Now
+            //var horaFechamentoMercado = new DateTime(data.Year, data.Month, data.Day, 17, 31, 0)
             var scheduler = ObtemSchedulerStart();
 
             IJobDetail job = JobBuilder.Create<RentabilizaContaCorrenteCdiFechamentoJob>()
@@ -31,7 +29,7 @@ namespace Brka.Bank.Contas.WebApi
                 .StartNow()
                 .WithSimpleSchedule(x => x
                     //.WithIntervalInHours(24)
-                    .WithIntervalInSeconds(15)
+                    .WithIntervalInMinutes(10)
                     .RepeatForever())
                 .Build();
 
