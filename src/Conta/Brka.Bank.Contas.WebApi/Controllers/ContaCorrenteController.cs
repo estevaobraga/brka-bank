@@ -35,7 +35,6 @@ namespace Brka.Bank.Contas.WebApi.Controllers
         /// Deposito em conta corrente
         /// </summary>
         /// <returns></returns>
-        // TODO : Criar classe para inputs
         [HttpPut("Deposito")]
         public async Task<IActionResult> PutDeposito([FromForm] int codigoAgencia, [FromForm] int numero, [FromForm] int digito, [FromForm] decimal valor)
         {
@@ -52,7 +51,6 @@ namespace Brka.Bank.Contas.WebApi.Controllers
         /// Resgate em conta corrente
         /// </summary>
         /// <returns></returns>
-        // TODO : Criar classe para inputs
         [HttpPut("Resgate")]
         public async Task<IActionResult> PutResgate([FromForm] int codigoAgencia, [FromForm] int numero, [FromForm] int digito, [FromForm] decimal valor)
         {
@@ -69,7 +67,6 @@ namespace Brka.Bank.Contas.WebApi.Controllers
         /// Pagamento de boleto
         /// </summary>
         /// <returns></returns>
-        // TODO : Criar classe para inputs
         [HttpPut("PagarBoleto")]
         public async Task<IActionResult> PutBoleto([FromForm] int codigoAgencia, [FromForm] int numero, [FromForm] int digito, [FromForm] decimal valor, [FromForm] string boleto)
         {

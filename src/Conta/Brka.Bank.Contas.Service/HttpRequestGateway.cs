@@ -7,10 +7,11 @@ namespace Brka.Bank.Contas.Service
 {
     public class HttpRequestGateway : IHttpRequestGateway
     {
+        private const string UrlTaxaCdi = "http://localhost:5000/TaxasDeJuros/CdiDia";
         public async Task<decimal> ObtemTaxaCdiDia()
         {
             var client = new HttpClient();
-            var response = await client.GetAsync("http://localhost:5000/TaxasDeJuros/CdiDia");
+            var response = await client.GetAsync(UrlTaxaCdi);
 
             if (response.IsSuccessStatusCode)
                 return JsonConvert.DeserializeObject<decimal>(await response.Content.ReadAsStringAsync());

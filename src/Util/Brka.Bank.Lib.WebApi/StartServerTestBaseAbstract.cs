@@ -10,8 +10,8 @@ namespace Brka.Bank.Lib.WebApi
 {
     public abstract class StartServerTestBaseAbstract<TStartup> : IClassFixture<WebApplicationFactory<TStartup>> where TStartup : StartupBase
     {
-        protected readonly HttpClient Client;
-        protected readonly IHost Host;
+        protected HttpClient Client;
+        protected IHost Host;
         
         protected StartServerTestBaseAbstract()
         {

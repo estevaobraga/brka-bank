@@ -41,14 +41,31 @@ namespace Brka.Bank.Contas.Integration.Test
         public async Task Quando_Depositar_Valor_Deve_Retornar_Sucesso()
         {
             // Act
-            var asdf = new MultipartFormDataContent
+            var httpContent = new MultipartFormDataContent
             {
                 {new StringContent("4763"), "codigoAgencia"},
                 {new StringContent("11458621"), "numero"},
                 {new StringContent("1"), "digito"},
                 {new StringContent("1"), "valor"}
             };
-            var response = await Client.PutAsync("ContaCorrente/Deposito", asdf);
+            var response = await Client.PutAsync("ContaCorrente/Deposito", httpContent);
+
+            // Assert
+            response.EnsureSuccessStatusCode();
+        }
+        
+        [Fact]
+        public async Task Quando_Resgatar_Valor_Deve_Retornar_Obter_Sucesso()
+        {
+            // Act
+            var httpContent = new MultipartFormDataContent
+            {
+                {new StringContent("4763"), "codigoAgencia"},
+                {new StringContent("11458621"), "numero"},
+                {new StringContent("1"), "digito"},
+                {new StringContent("1"), "valor"}
+            };
+            var response = await Client.PutAsync("ContaCorrente/Resgate", httpContent);
 
             // Assert
             response.EnsureSuccessStatusCode();

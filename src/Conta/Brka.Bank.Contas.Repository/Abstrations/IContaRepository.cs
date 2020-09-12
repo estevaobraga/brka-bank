@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using Brka.Bank.Contas.Domain;
 
@@ -8,5 +9,7 @@ namespace Brka.Bank.Contas.Repository.Abstrations
         Task CriaContaCorrente(ContaCorrente conta);
         Task AtualizarContaCorrente(ContaCorrente conta);
         Task<ContaCorrente> ObtemContaCorrente(Conta conta);
+        Task<ICollection<ContaCorrente>> OntemContas();
+        Task AtualizaRange(ICollection<ContaCorrente> contasCorrentes);
     }
 }
