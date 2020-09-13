@@ -9,8 +9,4 @@
       <ProjectReference Include="..\Brka.Bank.Contas.Repository\Brka.Bank.Contas.Repository.csproj" />
     </ItemGroup>
 
-    <ItemGroup>
-      <Folder Include="Validations" />
-    </ItemGroup>
-
 </Project>

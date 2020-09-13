@@ -7,7 +7,7 @@ namespace Brka.Bank.Contas.Service
 {
     public class HttpRequestGateway : IHttpRequestGateway
     {
-        private const string UrlTaxaCdi = "http://localhost:5000/TaxasDeJuros/CdiDia";
+        private const string UrlTaxaCdi = "http://localhost:5001/TaxasDeJuros/CdiDia";
         public async Task<decimal> ObtemTaxaCdiDia()
         {
             var client = new HttpClient();

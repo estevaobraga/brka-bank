@@ -13,11 +13,6 @@ namespace Brka.Bank.Contas.Repository.Contas
         {
         }
 
-        public async Task CriaContaCorrente(ContaCorrente conta)
-        {
-            await Criar(Mapper.Map<ContaModel>(conta));
-        }
-
         public async Task AtualizarContaCorrente(ContaCorrente conta)
         {
             await Atualizar(Mapper.Map<ContaModel>(conta));
@@ -38,12 +33,6 @@ namespace Brka.Bank.Contas.Repository.Contas
         public async Task<ICollection<ContaCorrente>> OntemContas()
         {
             return Mapper.Map<ICollection<ContaCorrente>>(await Context.Set<ContaModel>().AsNoTracking().ToListAsync());
-        }
-
-        public async Task AtualizaRange(ICollection<ContaCorrente> contasCorrentes)
-        {
-            Context.Set<ContaModel>().UpdateRange(Mapper.Map<ICollection<ContaModel>>(contasCorrentes));
-            await Context.SaveChangesAsync();
         }
     }
 }

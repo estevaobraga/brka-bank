@@ -1,5 +1,4 @@
 using System;
-using System.Collections.Generic;
 using System.Threading.Tasks;
 using AutoMapper;
 using Microsoft.EntityFrameworkCore;
@@ -15,11 +14,6 @@ namespace Brka.Bank.Contas.Repository.Abstrations
         {
             Context = context;
             Mapper = mapper;
-        }
-        
-        public virtual async Task<List<T>> ListarTodos()
-        {
-            return await Context.Set<T>().ToListAsync();
         }
 
         public async Task Criar(T entity)
