@@ -21,14 +21,50 @@
  - Quasar Framework  
 
 ## Fluxo Arquitetura  
-```mermaid
-sequenceDiagram
-Fronted App ->> Contas WebApi: /ExtratoContaCorrente
-Contas WebApi ->> Fronted App: Extrato
-Contas WebApi ->> Bacen Gateway: /TaxasDeJuros/CdiDia
-Bacen Gateway ->> Contas WebApi: Taxa CDI do Dia
+![sonar quality](badges/fluxoDiagram.png)
 
-Note right of Contas WebApi: Contas End Points:<br/>Acessar em<br/>Contas Api<br/>/swagger
-```
+## Para rodar este projeto:  
 
-## Para rodar este projeto
+### 1) Iniciar Base de Dados MySql  
+- Na raiz do repositório rodar o comando:  
+`docker-compose up -d`  
+Ou possuir base de dados MySQL, requer modificação da variável `DataBaseConf.ConnectionString` em `appsettings.Development.json`  
+- Executar script sql (`dbScript/EFMigration.sql`) na base de dados 
+
+
+### 2) Iniciar Bacen Gateway Api
+Na pasta `BacenGateway/Brka.Bank.BacenGateway.WebApi`  
+Executar  
+`dotnet restore`  
+`dotnet run`  
+
+### 3) Iniciar Contas Api
+Na pasta `src/Conta/Brka.Bank.Contas.WebApi`  
+Executar  
+`dotnet restore`  
+`dotnet run`  
+
+### 4) Iniciar Fronted App
+Na pasta `src/Apresentacao`  
+Executar  
+`yarn install`  
+`quasar dev`  
+  
+Ao acessar fronted dev obter:  
+  
+Rota ( / )  
+![/](src/Apresentacao/docs/tela01.png)
+
+Rota ( /home )  
+![/home](src/Apresentacao/docs/tela02.png)
+
+Rota ( /home#menu )  
+![/home#menu](src/Apresentacao/docs/tela03.png)
+
+## Swagger Apis  
+
+### Contas Apis  
+![sonar quality](badges/apiBacenGateway.png)  
+
+### Bacen Gateway  
+![sonar quality](badges/apiContas.png)  
