@@ -10,7 +10,7 @@
 - Docker e Docker Compose (19.03.6) ou MySql (8.0.21)  
 - Vue/Cli - 4.5.6  
 - Quasar/Cli - 1.1.0  
-Os testes de integração requerem base de dados MySQL configurada conforme o [primeiro passo para rodar este projeto](###1---Iniciar-Base-de-Dados-MySql)  
+Os testes de integração requerem base de dados MySQL configurada conforme o [primeiro passo para rodar este projeto](#1---Iniciar-Base-de-Dados-MySql)  
 
  ## Tecnologias implementadas
  - ASP.NET Core 3.1  
