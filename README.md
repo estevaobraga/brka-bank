@@ -10,6 +10,7 @@
 - Docker e Docker Compose (19.03.6) ou MySql (8.0.21)  
 - Vue/Cli - 4.5.6  
 - Quasar/Cli - 1.1.0  
+Os testes de integração requerem base de dados MySQL configurada conforme o [primeiro passo para rodar este projeto](###1---Iniciar-Base-de-Dados-MySql)  
 
  ## Tecnologias implementadas
  - ASP.NET Core 3.1  
@@ -25,32 +26,32 @@
 
 ## Para rodar este projeto:  
 
-### 1) Iniciar Base de Dados MySql  
+### 1 - Iniciar Base de Dados MySql
 - Na raiz do repositório rodar o comando:  
 `docker-compose up -d`  
 Ou possuir base de dados MySQL, requer modificação da variável `DataBaseConf.ConnectionString` em `appsettings.Development.json`  
 - Executar script sql (`dbScript/EFMigration.sql`) na base de dados 
 
 
-### 2) Iniciar Bacen Gateway Api
+### 2 - Iniciar Bacen Gateway Api
 Na pasta `BacenGateway/Brka.Bank.BacenGateway.WebApi`  
 Executar  
 `dotnet restore`  
 `dotnet run`  
 
-### 3) Iniciar Contas Api
+### 3 - Iniciar Contas Api
 Na pasta `src/Conta/Brka.Bank.Contas.WebApi`  
 Executar  
 `dotnet restore`  
 `dotnet run`  
 
-### 4) Iniciar Fronted App
+### 4 - Iniciar Fronted App
 Na pasta `src/Apresentacao`  
 Executar  
 `yarn install`  
 `quasar dev`  
   
-Ao acessar fronted dev obter:  
+Ao acessar fronted deve obter:  
   
 Rota ( / )  
 ![/](src/Apresentacao/docs/tela01.png)
