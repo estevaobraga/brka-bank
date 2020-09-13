@@ -6,10 +6,8 @@ namespace Brka.Bank.Contas.Repository.Abstrations
 {
     public interface IContaRepository
     {
-        Task CriaContaCorrente(ContaCorrente conta);
         Task AtualizarContaCorrente(ContaCorrente conta);
         Task<ContaCorrente> ObtemContaCorrente(Conta conta);
         Task<ICollection<ContaCorrente>> OntemContas();
-        Task AtualizaRange(ICollection<ContaCorrente> contasCorrentes);
     }
 }

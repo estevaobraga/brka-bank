@@ -70,5 +70,23 @@ namespace Brka.Bank.Contas.Integration.Test
             // Assert
             response.EnsureSuccessStatusCode();
         }
+        
+        [Fact]
+        public async Task Quando_E_Realizado_Pagamento_De_Boleto_Valido_Deve_Obter_Sucesso()
+        {
+            // Act
+            var httpContent = new MultipartFormDataContent
+            {
+                {new StringContent("4763"), "codigoAgencia"},
+                {new StringContent("11458621"), "numero"},
+                {new StringContent("1"), "digito"},
+                {new StringContent("1"), "valor"},
+                {new StringContent("1"), "boleto"}
+            };
+            var response = await Client.PutAsync("ContaCorrente/PagarBoleto", httpContent);
+
+            // Assert
+            response.EnsureSuccessStatusCode();
+        }
     }
 }

@@ -32,6 +32,8 @@ namespace Brka.Bank.Contas.Service
                 var valorRendimento = (saldo * cdi) / saldo;
                 contaCorrente.CreditoEmConta(valorRendimento);
 
+                await _contaRepository.AtualizarContaCorrente(contaCorrente);
+                
                 transacao.AdicinaOperacaoTrasacao(TipoTransacao.Credito, valorRendimento);
                 await _transacoesRepository.CadastraTransacao(transacao);
             }
